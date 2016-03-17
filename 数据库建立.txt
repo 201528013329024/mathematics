@@ -1,0 +1,404 @@
+ create table HuiYuan
+ (
+ id int primary key auto_increment,
+ name varchar(10),
+ txm varchar(20),
+ number varchar(10),
+ class varchar(5),
+ major varchar(15),
+ xueyuan varchar(15),
+ pwd varchar(16),
+ sex varchar(2),
+ qq varchar(15),
+ tel varchar(15),
+ suggestion varchar(255)
+ )
+
+ create table shudu
+ (
+ id int primary key auto_increment,
+ name varchar(10),
+ number varchar(10),
+ txm varchar(20),
+ sex varchar(2),
+ class varchar(5),
+ major varchar(15),
+ xueyuan varchar(15),
+ tel varchar(15)
+ )
+
+
+
+ create table math
+ (
+ id int primary key auto_increment,
+ name varchar(10),
+ number varchar(10),
+ sex varchar(2),
+ class varchar(5),
+ major varchar(15),
+ xueyuan varchar(15),
+ tel varchar(15)
+ )
+
+insert into math values(null,)
+
+ create table XiaoNeiSai_bm
+ (
+ id int primary key auto_increment,
+ name varchar(10),
+ number varchar(10),
+ txm varchar(20),
+ sex varchar(2),
+ class varchar(5),
+ major varchar(15),
+ xueyuan varchar(15),
+ tel varchar(15)
+ )
+
+ create table XiaoNeiSai_bm_txm
+ (
+  id int primary key auto_increment,
+ txm_number varchar(20),
+ is_use varchar(10)
+ );
+
+
+
+
+ create table txm
+ (
+  id int primary key auto_increment,
+ txm_number varchar(15),
+ is_use varchar(10)
+ );
+
+
+ create table shudu_txm
+ (
+  id int primary key auto_increment,
+ txm_number varchar(15),
+ is_use varchar(10)
+ );
+
+
+
+create table gonggao
+(
+ id int primary key auto_increment,
+ name varchar(255),
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+insert into gonggao values (null,'芜湖建模挑战赛--new','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','图片名称','徐浩广','2012-3-5');
+insert into gonggao values (null,'芜湖建模挑战赛--2','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','图片名称','徐浩广','2012-3-3');
+insert into gonggao values (null,'芜湖建模挑战赛--3','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','图片名称','徐浩广','2012-3-4');
+insert into gonggao values (null,'芜湖建模挑战赛--4','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','图片名称','徐浩广','2012-3-1');
+
+
+create table jianmotimu
+(
+ id int primary key auto_increment,
+ name varchar(255),
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+insert into jianmotimu values (null,'2012年全国赛','全国数学建模竞赛全国数学建模竞赛全国数学建模竞赛','徐浩广','2012-3-1');
+insert into jianmotimu values (null,'2011年全国赛','全国数学建模竞赛全国数学建模竞赛全国数学建模竞赛','徐浩广','2011-3-1');
+insert into jianmotimu values (null,'2010年全国赛','全国数学建模竞赛全国数学建模竞赛全国数学建模竞赛','徐浩广','2010-3-1');
+insert into jianmotimu values (null,'2009年全国赛','全国数学建模竞赛全国数学建模竞赛全国数学建模竞赛','徐浩广','2009-3-1');
+insert into jianmotimu values (null,'2008年全国赛','全国数学建模竞赛全国数学建模竞赛全国数学建模竞赛','徐浩广','2007-3-1');
+insert into jianmotimu values (null,'2007年全国赛','全国数学建模竞赛全国数学建模竞赛全国数学建模竞赛','徐浩广','2006-3-1');
+
+
+
+create table xinwen
+(
+ id int primary key auto_increment,
+ name varchar(255),
+ content text,
+ pic_url varchar(255),
+ picname varchar(255),
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+
+
+
+insert into xinwen values (null,'芜湖建模挑战赛--new','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+
+insert into xinwen values (null,'新一届理事见面大会成功召开','随着新的一届理事招新工作的圆满完成，数学建模协会的队伍又扩大了许多。为了加深协会各理事间的相互了解，方便协会以后各项工作的展开，数学建模协会举行了一次理事见面大会。 
+  此次理事见面大会以新一届理事之间的交流为主，主要内容为理事们表演节目，进行才艺展示。以部门为单位，每个部门出两个节目。进行部门与部门之间的交流。特别地，外联部部长现场临空创作了一幅毛笔书法，作为此次理事见面大会的一等奖赠予最佳表演者。大会现场始终保持轻松活跃的气氛，各理事都积极融入其中。 
+  大会的最后共有四位理事竞争最佳表演者，最终决出胜负。但外联部部长表示，最后竞争的这四位理事的表演都十分精彩，他将另写三幅作品赠予另三位理事。 
+  大会约持续了两个半小时，活动在融洽的氛围中进行、结束。通过此次活动，加深了各部门理事间的相互了解，使数学建模协会变得更加团结，为数学建模协会日后工作的展开以及协会的更好发展奠定了基础。 
+','www','图片名称','徐浩广','2012-3-5');
+
+insert into xinwen values (null,'建模新闻-1','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+insert into xinwen values (null,'建模新闻-2','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+insert into xinwen values (null,'建模新闻-3','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+
+insert into xinwen values (null,'建模新闻-4','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+insert into xinwen values (null,'建模新闻-5','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+insert into xinwen values (null,'建模新闻-6','芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛芜湖建模挑战赛','www','图片名称','徐浩广','2012-3-5');
+
+
+
+create table jianmozhishi
+(
+ id int primary key auto_increment,
+ name varchar(255),
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+create table quanguosai_Grade
+(
+ id int primary key auto_increment,
+ name varchar(255),
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+
+create table jingcaituijian
+(
+ id int primary key auto_increment,
+ name varchar(255),
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+insert into jingcaituijian values (null,'精彩推荐-1','数学建模精彩推荐数学建模精彩推荐','徐浩广','2012-3-1');
+insert into jingcaituijian values (null,'精彩推荐-2','数学建模精彩推荐数学建模精彩推荐','徐浩广','2012-3-1');
+insert into jingcaituijian values (null,'精彩推荐-3','数学建模精彩推荐数学建模精彩推荐','徐浩广','2012-3-1');
+insert into jingcaituijian values (null,'精彩推荐-4','数学建模精彩推荐数学建模精彩推荐','徐浩广','2012-3-1');
+insert into jingcaituijian values (null,'精彩推荐-5','数学建模精彩推荐数学建模精彩推荐','徐浩广','2012-3-1');
+insert into jingcaituijian values (null,'精彩推荐-6','数学建模精彩推荐数学建模精彩推荐','徐浩广','2012-3-1');
+
+
+create table xiehuijianjie
+(
+ id int primary key auto_increment,
+ chenglishijian varchar(255),
+ zhuguandanwei  varchar(255),
+ shetuanzhongzhi varchar(255),
+ zhidaolaoshi varchar(255),
+ xianrenhuizhang varchar(255),
+ pingpaihuodong varchar(255),
+ xiehuijianjie text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+
+
+create table zhuxituan
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ huizhang varchar(10),
+ fuhuizhang text,
+ huizhangzhuli varchar(255),
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+
+
+
+create table xueyanbu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table renzhengbu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table xuanchuanbu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table cehuabu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table wangluobu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table caiwubu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table bangongshi
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table wailianbu
+(
+ id int primary key auto_increment,
+ zhuyaogongzuo text, 
+ buzhang varchar(255),
+ bumenlishi text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+create table liuyan
+(
+ id int primary key auto_increment,
+ zhuti varchar(255),
+ content text,
+ liuyan_person varchar(10),
+ qq varchar(20),
+ liuyan_time  varchar(15),
+ answer_content text,
+ answer_person varchar(255),
+ answer_time varchar(15)
+);
+
+
+
+create table quanguosai
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+create table jianmojiangzuo
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table wuhusai
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+
+
+create table quweishuxue
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+
+create table wocaiwoxuan
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+create table xiaoneixuanbasai
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)男
+);
+
+
+create table shuqipeixun
+(
+ id int primary key auto_increment,
+ content text,
+ adduser varchar(10),
+ time  varchar(15)
+);
+
+
+insert into huiyuan values(null,'徐浩广','123','110705081','2011','软件工程','数计学院','123','男','123','15055752182','no');
+
+insert into huiyuan values(null,'陈美龄','123','130705081','2011','软件工程','数计学院','123','男','123','15055752182','no');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
